@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Zhi Jing — Embodied Intelligence</title>
+  <meta name="description" content="Zhi Jing at Fudan University. Research in embodied intelligence, spatial reasoning, bimanual dexterity, and memory for long-horizon robotic manipulation.">
+  <meta property="og:title" content="Zhi Jing — Embodied Intelligence">
+  <meta property="og:description" content="Zhi Jing at Fudan University. Publications and research on how robots reason about space, manipulate objects, and remember past actions.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="identity" href="#about" aria-label="Zhi Jing home">
+        <span class="name-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Zhi Jing</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about" aria-current="location">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors &amp; Awards</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell" id="main">
+    <section class="profile" id="about" aria-labelledby="profile-name">
+      <div class="profile-photo">
+        <img src="assets/zhi-jing.jpg" width="2316" height="3088" fetchpriority="high" alt="Zhi Jing by the waterfront">
+      </div>
+      <div class="profile-copy">
+        <h1 id="profile-name">Zhi Jing <span lang="zh">井智</span></h1>
+        <p class="affiliation">Fudan University · Shanghai, China</p>
+        <p class="bio">I study embodied intelligence at Fudan University. My research asks how robots can work out how parts fit together, coordinate two hands, and remember earlier steps in a task.</p>
+        <p class="bio">In <a href="https://assemlmhome.github.io/">AssemLM</a>, my collaborators and I use assembly diagrams, language, and 3D geometry to predict where each part belongs.</p>
+        <div class="profile-links">
+          <a href="https://scholar.google.com/citations?user=dlbY-nkAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/jingzhi-git">GitHub</a>
+          <a class="motion-open" href="assets/in-hand-rotation.mp4" aria-haspopup="dialog">Hand animation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="record-section" id="news" aria-labelledby="news-title">
+      <div class="section-heading"><h2 id="news-title">News</h2></div>
+      <ul class="news-list">
+        <li>
+          <time datetime="2026-09">Sep 2026</time>
+          <p><a href="https://github.com/TeleHuman/AssemLM#-news">AssemLM</a> was accepted to CoRL 2026. We also released the training code, model weights, and datasets for AssemLM 2.0.</p>
+        </li>
+        <li>
+          <time datetime="2026-03">Mar 2026</time>
+          <p>We introduced <a href="https://arxiv.org/abs/2603.09513">VQ-Memory</a> and RuleSafe, a simulation benchmark for manipulation tasks that require memory.</p>
+        </li>
+        <li>
+          <time datetime="2025-09">Sep 2025</time>
+          <p><a href="https://github.com/TeleHuman/HumanoidGen#-updates">HumanoidGen</a>, our work on generating two-handed manipulation demonstrations, was accepted to NeurIPS 2025.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="record-section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading" id="research">
+        <h2 id="publications-title">Publications</h2>
+        <a href="https://scholar.google.com/citations?user=dlbY-nkAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="publication-toolbar">
+        <div class="filter-group" role="group" aria-label="Filter publications by topic">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All work</button>
+          <button class="filter-button" type="button" data-filter="spatial" aria-pressed="false">Spatial reasoning</button>
+          <button class="filter-button" type="button" data-filter="dexterity" aria-pressed="false">Dexterity</button>
+          <button class="filter-button" type="button" data-filter="memory" aria-pressed="false">Memory</button>
+        </div>
+        <label class="publication-search">
+          <span class="sr-only">Search publications</span>
+          <input type="search" id="publication-search" placeholder="Find a paper" autocomplete="off">
+        </label>
+      </div>
+      <div class="publication-list">
+        <article class="publication" data-paper="assemlm" data-topic="spatial">
+          <a class="paper-figure" href="https://assemlmhome.github.io/" aria-label="assemlm project page">
+            <img loading="lazy" src="assets/assemlm-assembly.png" alt="Assembly manual illustration from AssemLM">
+          </a>
+          <div class="publication-main">
+            <p class="publication-venue">CoRL 2026</p>
+            <h3><a href="https://arxiv.org/abs/2604.08983">AssemLM: A Spatial Reasoning Multimodal Large Language Model for Robotic Assembly</a></h3>
+            <p class="authors"><strong>Zhi Jing</strong>, Jinbin Qiao, Ouyang Lu, Jicong Ao, Shuang Qiu, Huazhe Xu, Yu-Gang Jiang, Chenjia Bai</p>
+            <p class="paper-summary">AssemLM uses language, assembly diagrams, and 3D point clouds to infer how parts fit together.</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2604.08983">Paper</a>
+              <a href="https://assemlmhome.github.io/">Project</a>
+              <a href="https://github.com/TeleHuman/AssemLM">Code</a>
+              <button type="button" data-cite="assemlm">Cite</button>
+            </div>
+          </div>
+        </article>
+        <article class="publication" data-paper="vqmemory" data-topic="memory">
+          <a class="paper-figure" href="https://vqmemory.github.io/" aria-label="VQ-Memory project page">
+            <img loading="lazy" src="assets/vqmemory-framework.jpg" alt="Overview of the VQ-Memory framework">
+          </a>
+          <div class="publication-main">
+            <p class="publication-venue">arXiv preprint · 2026</p>
+            <h3><a href="https://arxiv.org/abs/2603.09513">Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks</a></h3>
+            <p class="authors">Honghui Wang, <strong>Zhi Jing</strong>, Jicong Ao, Shiji Song, Xuelong Li, Gao Huang, Chenjia Bai</p>
+            <p class="paper-summary">VQ-Memory encodes past interactions as discrete tokens so a robot can act on information it no longer observes.</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2603.09513">Paper</a>
+              <a href="https://vqmemory.github.io/">Project</a>
+              <button type="button" data-cite="vqmemory">Cite</button>
+            </div>
+          </div>
+        </article>
+        <article class="publication" data-paper="humanoidgen" data-topic="dexterity">
+          <a class="paper-figure" href="https://openhumanoidgen.github.io/" aria-label="humanoidgen project page">
+            <img loading="lazy" src="assets/humanoidgen-scene.jpg" alt="Two-handed manipulation in the HumanoidGen simulator">
+          </a>
+          <div class="publication-main">
+            <p class="publication-venue">NeurIPS 2025</p>
+            <h3><a href="https://papers.nips.cc/paper_files/paper/2025/hash/e4ef7454447baa15a424314e6284441b-Abstract-Conference.html">HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM Reasoning</a></h3>
+            <p class="authors"><strong>Zhi Jing</strong>, Siyuan Yang, Jicong Ao, Ting Xiao, Yu-Gang Jiang, Chenjia Bai</p>
+            <p class="paper-summary">HumanoidGen turns language instructions and spatial constraints into demonstrations for two-handed manipulation.</p>
+            <div class="publication-links">
+              <a href="https://papers.nips.cc/paper_files/paper/2025/hash/e4ef7454447baa15a424314e6284441b-Abstract-Conference.html">Paper</a>
+              <a href="https://openhumanoidgen.github.io/">Project</a>
+              <a href="https://github.com/TeleHuman/HumanoidGen">Code</a>
+              <button type="button" data-cite="humanoidgen">Cite</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>No matching papers. Try another search or choose All work.</p>
+      <p class="filter-status sr-only" aria-live="polite">3 publications shown</p>
+    </section>
+
+    <section class="record-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><h2 id="education-title">Education</h2></div>
+      <div class="record-list">
+        <div class="record-row">
+          <div>
+            <h3>Fudan University</h3>
+            <p>Embodied intelligence</p>
+          </div>
+          <span class="record-date">Shanghai, China</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="record-section" id="honors" aria-labelledby="honors-title">
+      <div class="section-heading"><h2 id="honors-title">Honors &amp; Awards</h2></div>
+      <p class="record-empty">No entries listed yet.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>© <span id="current-year">2026</span> Zhi Jing</span>
+    <a href="#about">Back to top ↑</a>
+  </footer>
+
+  <dialog id="motion-dialog" aria-labelledby="motion-title">
+    <div class="modal-heading">
+      <h2 id="motion-title">In-hand rotation</h2>
+      <button class="close-dialog" type="button" aria-label="Close animation">×</button>
+    </div>
+    <video class="hand-film" width="896" height="784" muted loop playsinline controls
+        preload="none" poster="assets/in-hand-poster.webp"
+        aria-label="A five-finger robotic hand rotates an orange cube in its palm">
+      <source src="assets/in-hand-rotation.mp4" type="video/mp4">
+      <a href="assets/in-hand-rotation.mp4">Play the animation</a>
+    </video>
+  </dialog>
+  <dialog id="citation-dialog" aria-labelledby="citation-title">
+    <div class="modal-heading">
+      <h2 id="citation-title">Cite this work</h2>
+      <button class="close-dialog" type="button" aria-label="Close citation dialog">×</button>
+    </div>
+    <pre id="citation-content" tabindex="0"></pre>
+    <div class="dialog-actions">
+      <p class="copy-status" aria-live="polite"></p>
+      <button class="button-primary" id="copy-citation" type="button">Copy BibTeX</button>
+    </div>
+  </dialog>
+</body>
+</html>
