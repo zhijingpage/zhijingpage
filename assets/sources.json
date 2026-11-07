@@ -1,0 +1,25 @@
+{
+  "assets": [
+    {
+      "file": "assets/humanoidgen-scene.jpg",
+      "source": "https://openhumanoidgen.github.io/static/images/whatever.png",
+      "description": "Official HumanoidGen simulation scene showing a bimanual humanoid at a kitchen counter; converted to JPEG for delivery."
+    },
+    {
+      "file": "assets/vqmemory-framework.jpg",
+      "source": "https://vqmemory.github.io/static/images/framework_v1.jpg",
+      "description": "Official VQ-Memory framework; proportionally reduced to 2400px width and JPEG optimized."
+    },
+    {
+      "file": "assets/assemlm-assembly.png",
+      "source": "https://raw.githubusercontent.com/assemlmhome/assemlmhome.github.io/main/interactive/furniture/bench-01/manual_colored/bench_1000_3.png",
+      "description": "Official AssemLM colored bench assembly step from interactive manual demo; unmodified."
+    },
+    {
+      "file": "assets/in-hand-rotation.mp4",
+      "poster": "assets/in-hand-poster.webp",
+      "source": "Original procedural Blender scene created for Zhi Jing’s website.",
+      "description": "A rigged five-finger robotic hand turns an anodized test block. Concept animation, not research footage."
+    }
+  ]
+}
